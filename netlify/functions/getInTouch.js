@@ -44,5 +44,8 @@ exports.handler = async function(event) {
         }
     }*/
 
-    return new Response("HELLO WORLD");
+    return  {
+        statusCode: 200,
+        body: JSON.stringify("Visszatértem dummy 200-al")
+    }
 }
