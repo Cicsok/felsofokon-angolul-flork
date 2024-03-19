@@ -1,5 +1,5 @@
 exports.handler = async function(event) {
-    const requestBody = JSON.parse(event.body);
+    /*const requestBody = JSON.parse(event.body);
     if (event.body === null || Object.keys(requestBody).length === 0) {
         return {
             statusCode: 400,
@@ -42,5 +42,7 @@ exports.handler = async function(event) {
             statusCode: error.cause.statusCode,
             body: JSON.stringify(error.cause.statusText)
         }
-    }
+    }*/
+
+    return new Response("HELLO WORLD");
 }
