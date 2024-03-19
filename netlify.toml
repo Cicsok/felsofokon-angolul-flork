@@ -2,4 +2,4 @@
 functions = "netlify/functions"
 
 [[plugins]]
-package = "@netlify/plugin-emails@1.0.3"
+package = "@netlify/plugin-emails"
