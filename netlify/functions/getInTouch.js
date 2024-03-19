@@ -6,8 +6,9 @@ exports.handler = async function(event, context) {
             body: JSON.stringify("Payload required")
         }
     }
-   /* try{
-         const response = await fetch(`${process.env.URL}/.netlify/functions/emails/getInTouch`, {
+    try{
+        console.log(process.env.NETLIFY_EMAILS_SECRET);
+         const response = await fetch(`${process.env.URL}/.netlify/functions/emails/`, {
              headers: {
                  "netlify-emails-secret": process.env.NETLIFY_EMAILS_SECRET
              },
@@ -42,10 +43,10 @@ exports.handler = async function(event, context) {
             statusCode: error.cause.statusCode,
             body: JSON.stringify(error.cause.statusText)
         }
-    }*!/*/
+    }
 
-    return  {
+    /*return  {
         statusCode: 200,
         body: JSON.stringify({ message: "Hello World" })
-    }
+    }*/
 }
