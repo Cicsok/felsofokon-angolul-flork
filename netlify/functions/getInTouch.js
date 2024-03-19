@@ -8,7 +8,8 @@ exports.handler = async function(event, context) {
     }
     try{
         console.log(process.env.NETLIFY_EMAILS_SECRET);
-         const response = await fetch(`${process.env.URL}/.netlify/functions/emails/`, {
+        console.log(`${process.env.URL}/.netlify/functions/emails/getInTouch`);
+         const response = await fetch(`${process.env.URL}/.netlify/functions/emails/getInTouch`, {
              headers: {
                  "netlify-emails-secret": process.env.NETLIFY_EMAILS_SECRET
              },
