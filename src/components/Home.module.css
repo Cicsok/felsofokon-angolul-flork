@@ -49,7 +49,7 @@
     margin-bottom: 10px;
 }
 
-.section:nth-child(even)::after{
+.section:nth-child(even):not(:last-of-type)::after{
     content: url("../assets/separator/Triangle-grey.svg");
     position: absolute;
     width: 100%;
@@ -129,4 +129,9 @@
 
 .serviceCard:not(:last-of-type){
     margin-right: 20px;
+}
+
+.section:last-of-type{
+    min-height: 940px;
+    padding-bottom: 50px;
 }

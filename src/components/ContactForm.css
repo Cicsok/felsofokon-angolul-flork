@@ -1,0 +1,142 @@
+.contact{
+    white-space: pre-line;
+}
+
+.contact-form{
+    width: 900px;
+    height: 695px;
+    background-color: #FFD6D6;
+    padding: 60px 160px;
+    display: flex;
+    justify-content: center;
+    border-radius: 46px;
+    font-family: "Roboto", sans-serif;
+}
+
+.form-content{
+    min-width: 150%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    justify-content: center;
+}
+
+.flex-row{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.flex-row div:first-of-type{
+    margin-right: 30px;
+}
+
+.flex-row div:last-of-type{
+    align-self: flex-start;
+}
+
+.contact-form label, .contact-form input, .contact-form textarea{
+    display: block;
+    width: 100%;
+}
+
+.contact-form textarea{
+    resize: none;
+    width: calc(100% + 30px);
+    height: 250px;
+    padding: 10px;
+}
+
+.flex-row div, .contact-form .select-button{
+    width: 100%;
+}
+
+.contact-form button[type="submit"]{
+    width: fit-content;
+    background-color: #9b9090;
+    border-radius: 20px;
+    padding: 7px 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form label{
+    font-size: 15px;
+    position: relative;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.contact-form label[required]::after{
+    content: "*";
+    color: red;
+    position: absolute;
+    margin-left: 2px;
+    top: -3px;
+}
+
+.contact-form input, .contact-form .select-button, .contact-form textarea{
+    padding: 7px 5px;
+    border-radius: 5px;
+    border: 2px solid #A6A6A6;
+}
+
+.select-button{
+    text-align: left;
+    position: relative;
+    background-color: white;
+}
+
+.select-button::after{
+    content: url("../assets/down-arrow.svg");
+    position: absolute;
+    right: 6px;
+    top: 9px;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+
+.select-option{
+    padding:10px;
+}
+
+.select-option:hover{
+    background-color: rgba(255, 214, 214, 0.54);
+    cursor: pointer;
+}
+
+.select-options-container {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.56);
+    backdrop-filter: blur(5px);
+    border: 3px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.flex-row > div{
+    position: relative;
+}
+
+.error-message{
+    margin-top: 5px;
+    color: red;
+    position:absolute;
+    width:100%;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+.form-input:has(.error-message){
+    margin-bottom: 30px;
+}
+
+.feedback-form-content{
+    min-width: 150%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    justify-content: center;
+    font-size: x-large;
+    align-items: center;
+}

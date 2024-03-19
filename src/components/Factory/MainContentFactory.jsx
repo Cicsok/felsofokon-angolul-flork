@@ -1,14 +1,14 @@
-import createFactory from "../data/createFactory";
-import Home from "./Home";
-import AboutMe from "./AboutMe";
-import Services from "./Services";
-import OfferedLessonDetails from "./OfferedLessonDetails";
-import Prices from "./Prices";
-import Contact from "./Contact";
-import Blog from "./Blog";
-import NotFound from "./NotFound";
+import createFactory from "../../data/createFactory";
+import Home from "../Home";
+import AboutMe from "../AboutMe";
+import Services from "../Services";
+import OfferedLessonDetails from "../OfferedLessonDetails";
+import Prices from "../Prices";
+import Contact from "../Contact";
+import Blog from "../Blog";
+import NotFound from "../NotFound";
 
-function Factory({page, errorText, pageContentData}){
+function MainContent({page, errorText, pageContentData}){
     const pageContent = errorText ? errorText : pageContentData;
     function detectMainContent(page, errorText, pageContent){
         let mainContent = null;
@@ -46,5 +46,5 @@ function Factory({page, errorText, pageContentData}){
     return detectMainContent(page, errorText, pageContent)
 }
 
-const MainContentFactory = createFactory(Factory);
+const MainContentFactory = createFactory(MainContent);
 export default MainContentFactory;

@@ -1,7 +1,7 @@
 import {useHeaderContext} from "../store/contexts-provider";
 import {useEffect, useState} from "react";
 import {ERROR_TEXT} from "../data/static-data";
-import MainContentFactory from "./Factory";
+import MainContentFactory from "./Factory/MainContentFactory";
 import {getPageContentData} from "../data/page-data-provider";
 
 function isFetchFinished(data, error){

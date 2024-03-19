@@ -1,0 +1,37 @@
+<mjml>
+    <mj-body background-color="#ffffff">
+        <mj-section background-color="#ffffff" padding-bottom="0px" padding-top="0">
+            <mj-column vertical-align="top" width="100%">
+                <mj-image src="https://deploy-preview-1--felsofokonemail.netlify.app/flowers.jpg" alt="Yellow flowers" align="right" border="none" width="600px" height="200px" padding-left="0px" padding-right="0px" padding-bottom="0px" padding-top="0"></mj-image>
+            </mj-column>
+        </mj-section>
+        <mj-section background-color="#e7f3f8" padding-bottom="0px" padding-top="0">
+            <mj-column vertical-align="top" width="100%">
+                <mj-text color="#ffdf69" align="left" font-size="45px" font-weight="bold" font-family="open Sans Helvetica, Arial, sans-serif" padding-left="25px" padding-right="25px" padding-bottom="10px" padding-top="50px">Szép napot Anna! ✨</mj-text>
+            </mj-column>
+        </mj-section>
+        <mj-section background-color="#e7f3f8" padding-bottom="20px">
+            <mj-column vertical-align="middle" width="100%">
+                <mj-text align="left" color="#000000" font-size="22px" font-family="open Sans Helvetica, Arial, sans-serif" padding-left="25px" padding-right="25px">{{name}} szeretné felvenni veled a kapcsolatot! </mj-text>
+                <mj-text align="left" color="#000000" font-size="22px" font-family="open Sans Helvetica, Arial, sans-serif" padding-left="25px" padding-right="25px" font-weight="bold" padding-bottom="0">
+                    Íme az adatai:
+                </mj-text>
+            </mj-column>
+        </mj-section>
+        <mj-section background-color="#e7f3f8" padding-top="0" padding="0 20px">
+            <mj-column background-color="#ffdf69" border-radius="20px"  width="100%" padding="10px 0">
+                <mj-text align="left" color="#000000" font-size="22px" font-family="open Sans Helvetica, Arial, sans-serif" font-weight="bold"><span style="font-weight:100; font-style:italic; word-wrap: break-word; line-height:1.3;" >Név: </span>
+                    {{name}} </mj-text>
+                <mj-text align="left" color="#000000" font-size="22px" font-family="open Sans Helvetica, Arial, sans-serif" font-weight="bold"><span style="font-weight:100; font-style:italic; word-wrap: break-word; line-height:1.3;" >Email-cím: </span>{{email}} </mj-text>
+                <mj-text align="left" color="#000000" font-size="22px" font-family="open Sans Helvetica, Arial, sans-serif" font-weight="bold"><span style="font-weight:100; font-style:italic; word-wrap: break-word; line-height:1.3;" >Szint: </span>{{level}} </mj-text>
+                <mj-text align="left" color="#000000" font-size="22px" font-family="open Sans Helvetica, Arial, sans-serif" font-weight="bold"><span style="font-weight:100; font-style:italic; word-wrap: break-word; line-height:1.3;" >Érdeklődédének a tárgya: </span>{{cause}} </mj-text>
+                <mj-text align="left" color="#000000" font-size="22px" font-family="open Sans Helvetica, Arial, sans-serif" font-weight="bold"><span style="font-weight:100; font-style:italic; word-wrap: break-word; line-height:1.3;" >Üzenet: </span>{{message}} </mj-text>
+                <mj-text align="left" color="#000000" font-size="22px" font-family="open Sans Helvetica, Arial, sans-serif" font-weight="bold"><span style="font-weight:100; font-style:italic; word-wrap: break-word; line-height:1.3;" >A nyelv amin megtekintette az oldalt: </span>{{pageLanguage}} </mj-text>
+                <mj-text align="left" color="#000000" font-size="22px" font-family="open Sans Helvetica, Arial, sans-serif" font-weight="bold"><span style="font-weight:100; font-style:italic; word-wrap: break-word; line-height:1.3;" >A város, ahonnan megtekintette az oldalt (ez az információ nem biztosan igaz): </span>{{city}} </mj-text>
+            </mj-column>
+            <mj-column width="100%">
+                <mj-text align="left" color="#000000" font-size="22px" font-family="open Sans Helvetica, Arial, sans-serif"  padding-left="10px" padding-right="25px" padding-top="20px" padding-bottom="30px">További szép napot! 👋🏻</mj-text>
+            </mj-column>
+        </mj-section>
+    </mj-body>
+</mjml>

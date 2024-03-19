@@ -4,6 +4,8 @@ import ReferencesSlider from "./ReferencesSlider";
 import SectionTitle from "./SectionTitle";
 import FAQ from "./FAQ";
 import {isErrorOccurred, sanitizeHTMLContent} from "../store/utils";
+import './ContactForm.css'
+import ContactForm from "./ContactForm";
 
 export default function Home({pageContent}){
     const {currentLanguage} = useHeaderContext();
@@ -12,6 +14,7 @@ export default function Home({pageContent}){
     const servicesSectionContent = isError ? pageContent : pageContent.services[currentLanguage];
     const referencesSectionContent = isError ? pageContent : pageContent.references[currentLanguage];
     const faqSectionContent = isError ? pageContent : pageContent.faq[currentLanguage];
+    const contactSectionContent = isError ? pageContent : pageContent.contact[currentLanguage];
 
     return (
         <>
@@ -47,6 +50,12 @@ export default function Home({pageContent}){
                     {isError ? <div>{pageContent}</div> :
                         <FAQ faqContent={faqSectionContent.data}/>
                     }
+                </div>
+            </section>
+            <section className={classes.section}>
+                <SectionTitle className={classes.sectionTitle} title={contactSectionContent.title}/>
+                <div className="contact">
+                    {isError ? <div>{pageContent}</div> : <ContactForm contactContent={contactSectionContent}/>}
                 </div>
             </section>
         </>

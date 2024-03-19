@@ -193,7 +193,7 @@ export const DUMMY_HOMEPAGE_DATA = {
             ]
         },
         ENG: {
-            title: "Frequently asked question",
+            title: "Frequently asked questions",
             data: [
                 {
                     question: "<div style=\"font-family: 'Roboto', palatino, sans-serif; color: #333; line-height: 1.6;\"><p class=\"question\">Why choose an online language teacher over a traditional classroom?</p></div>",
@@ -227,6 +227,67 @@ export const DUMMY_HOMEPAGE_DATA = {
                 }
             ]
         }
-
+    },
+    contact:{
+        HUN:{
+            title:"Lépj kapcsolatba velem",
+            name:"Név",
+            namePlaceholder: "Szakács Ágnes",
+            nameInputError: "A nevet kötelező megadni",
+            email:"Email",
+            emailPlaceholder: "example@gmail.com",
+            emailInputError: "Az e-mail cím nem érvényes. Tartalmaznia kell pontosan egy '@' jelet és legalább egy '.'-ot",
+            level: "Szint",
+            levelOptions: ["A1", "A2", "B1", "B2", "C1", "C2", "Nem tudom"],
+            contactCause: "Érdeklődésem tárgya",
+            contactCauseOptions: ["Általános nyelvóra", "Nyelvvizsga felkészítés", "Érettségi felkészítés", "Fordítás", "Egyéb"],
+            message: "Üzenet",
+            messagePlaceHolder: "Írd ide az üzenetet...",
+            messageTextareaError: "Az üzenetet kötelező megadni",
+            sendButtonText: "Küldés",
+            disabledButtonText: "Az űrlap kitöltése nem megfelelő! Kérlek tölts ki minden *-al jelölt mezőt.",
+            successfulSendText: "Köszönöm, hogy felvetted velem a kapcsolatot! Örömmel értesítelek, hogy sikeresen megkaptam az üzenetedet.\nHamarosan fel fogom venni veled a megadott elérhetőségeden a kapcsolatot, addig is legyen szép napod!",
+            unsuccessfulSendText: "Valami hiba történt a kapcsolat felvétele során, az űrlapot nem sikerült elküldeni. Kérlek próbáld újra később!\nHa a probléma tartósan fennáll kérlek jelezd nekem a bugreport@gmail.com email címen."
+        },
+        ENG:{
+            title:"Get in touch with me",
+            name: "Name",
+            namePlaceholder: "Agnes Szakacs",
+            nameInputError: "Name is mandatory",
+            email: "Email",
+            emailPlaceholder: "example@gmail.com",
+            emailInputError: "Invalid email address. It must contain exactly one '@' symbol and at least one '.'",
+            level: "Level",
+            levelOptions: ["A1", "A2", "B1", "B2", "C1", "C2", "Don't know"],
+            contactCause: "Subject of inquiry",
+            contactCauseOptions: ["General language lesson", "Language exam preparation", "High school exam preparation", "Translation", "Other"],
+            message: "Message",
+            messagePlaceHolder: "Type your message here...",
+            messageTextareaError: "Message is mandatory",
+            sendButtonText: "Send",
+            disabledButtonText: "Form submission is invalid! Please fill in all fields marked with *.",
+            successfulSendText:"Thank you for contacting me! I'm pleased to inform you that I have successfully received your message.\nI will reach out to you shortly at the provided contact information. In the meantime, have a great day!",
+            unsuccessfulSendText: `An error occurred while establishing the connection, the form could not be submitted. Please try again later!\nIf the problem persists, please notify me at bugreport@gmail.com.`
+        },
+        FR:{
+            title:"Me contacter",
+            name: "Nom",
+            namePlaceholder: "Agnes Szakacs",
+            nameInputError: "Le nom est obligatoire",
+            email: "Email",
+            emailPlaceholder: "example@gmail.com",
+            emailInputError: "Adresse e-mail invalide. Elle doit contenir exactement un symbole '@' et au moins un '.'",
+            level: "Niveau",
+            levelOptions: ["A1", "A2", "B1", "B2", "C1", "C2", "Je ne sais pas"],
+            contactCause: "Objet de la demande",
+            contactCauseOptions: ["Cours de langue général", "Préparation aux examens de langue", "Préparation aux examens du lycée", "Traduction", "Autre"],
+            message: "Message",
+            messagePlaceHolder: "Écrivez votre message ici...",
+            messageTextareaError: "Le message est obligatoire",
+            sendButtonText: "Envoyer",
+            disabledButtonText: "La soumission du formulaire n'est pas valide! Veuillez remplir tous les champs marqués d'un *.",
+            successfulSendText: "Merci de m'avoir contacté ! Je suis heureux de vous informer que j'ai bien reçu votre message.\nJe vous contacterai sous peu aux coordonnées fournies. En attendant, passez une bonne journée !",
+            unsuccessfulSendText:"Une erreur s'est produite lors de l'établissement de la connexion, le formulaire n'a pas pu être envoyé. Veuillez réessayer plus tard!\nSi le problème persiste, veuillez me le signaler à l'adresse bugreport@gmail.com."
+        }
     }
 }

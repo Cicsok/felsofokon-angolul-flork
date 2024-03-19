@@ -4,12 +4,14 @@ import HeaderContextProvider from "./store/header-context";
 
 import Header from "./components/Header/Header";
 import MainContent from "./components/MainContent";
+import ContactFormProvider from "./store/contact-form-context";
 
 function App() {
   return (
       <Router>
-          <HeaderContextProvider>
-            <Header/>
+        <HeaderContextProvider>
+          <Header/>
+          <ContactFormProvider>
             <Routes>
               <Route path="/home" element={<MainContent/>}/>
               <Route path="/" element={<MainContent/>}/>
@@ -23,7 +25,8 @@ function App() {
               <Route path="/translation" element={<MainContent/>}/>
               <Route path="*" element={<MainContent/>}/>
             </Routes>
-          </HeaderContextProvider>
+          </ContactFormProvider>
+        </HeaderContextProvider>
       </Router>
   );
 }
