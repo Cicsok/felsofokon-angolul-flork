@@ -1,4 +1,4 @@
-exports.handler = async function(event) {
+exports.handler = async function(event, context) {
     /*const requestBody = JSON.parse(event.body);
     if (event.body === null || Object.keys(requestBody).length === 0) {
         return {
@@ -46,6 +46,6 @@ exports.handler = async function(event) {
 
     return  {
         statusCode: 200,
-        body: JSON.stringify("Visszatértem dummy 200-al")
+        body: JSON.stringify({ message: "Hello World" })
     }
 }
