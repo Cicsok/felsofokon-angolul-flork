@@ -60,6 +60,7 @@ export default function ContactFormProvider({ children }) {
                 })
                     .then(response => {
                         contactFormStateDispatcher({ type: 'FORM_SENDING_FINISHED'});
+                        console.log(response)
                         if (response.statusCode === 200){
                             contactFormStateDispatcher({ type: 'FORM_SUBMIT_SUCCESS' });
                         }

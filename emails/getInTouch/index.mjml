@@ -2,7 +2,7 @@
     <mj-body background-color="#ffffff">
         <mj-section background-color="#ffffff" padding-bottom="0px" padding-top="0">
             <mj-column vertical-align="top" width="100%">
-                <mj-image src="../src/assets/flowers.jpg" alt="Yellow flowers" align="right" border="none" width="600px" height="200px" padding-left="0px" padding-right="0px" padding-bottom="0px" padding-top="0"></mj-image>
+                <mj-image src="https://deploy-preview-1--felsofokonemail.netlify.app/flowers.jpg" alt="Yellow flowers" align="right" border="none" width="600px" height="200px" padding-left="0px" padding-right="0px" padding-bottom="0px" padding-top="0"></mj-image>
             </mj-column>
         </mj-section>
         <mj-section background-color="#e7f3f8" padding-bottom="0px" padding-top="0">
