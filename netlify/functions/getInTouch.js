@@ -1,12 +1,12 @@
 exports.handler = async function(event, context) {
-    /*const requestBody = JSON.parse(event.body);
+    const requestBody = JSON.parse(event.body);
     if (event.body === null || Object.keys(requestBody).length === 0) {
         return {
             statusCode: 400,
             body: JSON.stringify("Payload required")
         }
     }
-    try{
+   /* try{
          const response = await fetch(`${process.env.URL}/.netlify/functions/emails/getInTouch`, {
              headers: {
                  "netlify-emails-secret": process.env.NETLIFY_EMAILS_SECRET
@@ -42,7 +42,7 @@ exports.handler = async function(event, context) {
             statusCode: error.cause.statusCode,
             body: JSON.stringify(error.cause.statusText)
         }
-    }*/
+    }*!/*/
 
     return  {
         statusCode: 200,
